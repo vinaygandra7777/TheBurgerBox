@@ -1,0 +1,698 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.body{
+    background-image:url("pics/salt.png");
+    background-repeat: no-repeat;
+    width:100vw;
+    height: 160vh;
+    background-size: 100% 120%;
+    position: relative;
+    overflow-x: hidden;
+    @media (width<=600px){
+        width:600px;
+        height: 90vh;
+    }
+    @media (width<=500px){
+        height:70vh;
+    }
+    
+}
+.contact button{
+    padding: 1em;
+    background-color:rgb(253, 45, 45);
+    color: white;
+    position: absolute;
+    top: 80%;
+    left:45%;
+    border: none;
+    border-radius: 1.5em;
+    width:14%;
+    box-shadow: 0px 0px 5px 0px white;
+    font-size: 1.2em;
+    @media (width<=600px){
+        width:25%;
+        left:40%
+    }
+
+
+}
+.contact button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+    font-weight: 4em;
+}
+.active h4{
+    letter-spacing: 3px;
+    font-size: 1em;
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.maincontact h1{
+    position: absolute;
+    color: rgb(241, 241, 245);
+    font-size: 14em;
+    top:40%;
+    left:15%;
+    letter-spacing: 3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0.2em;
+  font-weight: 900;
+  @media (width<=600px){
+    font-size: 6.5em;
+    top:0.8em;
+    left: 4.5%;
+  }
+}
+
+.maincontact h2{
+    position: absolute;
+    color: rgb(249, 41, 41);
+    font-size: 5em;
+    top:35%;
+    left:21%;
+    letter-spacing: 3px;
+    font-family:'Bubblegum Sans';
+    padding:0.2em;
+    font-weight: 900;
+    @media (width<=600px){
+        font-size: 2.4em;
+        top:2em;
+        left:11%;
+      }
+}
+.maincontact{
+    position: sticky;
+    top: 4%;
+}
+span{
+    color:rgb(148, 148, 249);
+    font-family: "Jost", sans-serif;
+    
+
+}
+.contact{
+    position: sticky;
+    top:7%;
+}
+
+.contact img{
+    width:80%;
+    margin-left: 12%;
+    margin-top:4em;
+    @media (width<=600px){
+        width:600px;
+        margin-left: 2%;
+        margin-top: 5em;
+    }
+
+}
+.c1 img{
+    width:80%;
+    border-radius: 15px;
+    margin-left: 2em;
+}
+section{
+    display:flex;
+}
+.c1{
+    flex-basis: 50%;
+}
+.c2{
+    flex-basis: 50%;
+    margin-top: 10em;
+    cursor: pointer;
+    font-family: "Libre Baskerville", serif;
+    font-style:oblique;
+}
+.c2 button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+}
+.c2 h3{
+    font-size: 3em;
+    letter-spacing: 2px;
+    width:60%;
+    font-family: libre;
+}
+.c2 p{
+    width:50%;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.773);
+    font-size: 1.2em;
+}
+.c2 h4{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.main2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content:center;
+}
+.child2{
+    display: grid;
+    grid-template-columns:auto 40%;
+    justify-content: center;
+    margin-left: 4em;
+    gap: 2em;
+    margin-right: 6em;
+}
+
+.child1{
+    margin-top: 5em;
+    padding: 15px;
+    margin-left: 5em;
+    width:80%;
+}
+.child1 img{
+    width:100%;
+}
+.class1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+.class2{
+    display: grid;
+    grid-template-columns:40% 60%;
+    justify-content: space-around;
+}
+.class2 button{
+    padding: 10px;
+    color: white;
+    background-color:black;
+    border-radius: 2em;
+    width: 100%;
+
+}
+.b{
+    font-size: 2em;
+}
+.c{
+    font-size: 2em;
+    
+
+}
+.child22 p{
+    font-size: 1.3em;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight:; */
+    font-style: normal;
+
+}
+.child11 img:hover{
+    transform: scale(1.1);
+
+
+}
+.class1 button{
+    padding: 10px;
+    color: white;
+    background-color:black;
+    border-radius: 10px;
+    width:150%
+}
+
+.main3{
+    background-color: black;
+}
+.main4{
+    background-color: black;
+}
+.child4{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 4em;
+}
+.child4-2{
+    color: white;
+    margin-top: 7em;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+.child4-2 p{
+    letter-spacing: 3px;
+    font-size: 2em;
+
+}
+.child4-2 h2{
+    letter-spacing: 3px;
+    font-size: 3.6em;
+
+}
+.child4-2 button{
+    background-color:rgb(253, 45, 45);
+    padding: 1em;
+    border-radius: 1.4em;
+    width:20%;
+    color: white;
+}
+.child4-2 a{
+    text-decoration: none;
+    color: white;
+    border:1px solid;
+    padding: 1.4em;
+    border-radius: 1.9em;
+    width:100%;
+}
+.child4-2 a:hover{
+    background-color:rgb(253, 45, 45);
+    border: none;
+    font-size: 1.3em;
+}
+.child5-2 a:hover{
+    background-color:rgb(253, 45, 45);
+    border: none;
+    font-size: 1.3em;
+}
+.child5{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    gap:2em;
+    padding: 1.4em;
+
+}
+.a1 h2{
+    color: white;
+}
+.child5-2{
+    color: white;
+    margin-top: 15em;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+
+}
+.child5-2 a{
+    text-decoration: none;
+    color: white;
+    border:1px solid;
+    padding: 1.4em;
+    border-radius: 1.9em;
+    width:100%;
+}
+.child5-2 button{
+    background-color:rgb(253, 45, 45);
+    padding: 1em;
+    border-radius: 1.4em;
+    width:20%;
+    color: white;
+}
+.child5-2 p{
+    letter-spacing: 3px;
+    font-size: 2em;
+
+}
+.child5-2 h2{
+    letter-spacing: 3px;
+    font-size: 3.6em;
+
+}
+.child5-1 img{
+    width:725px;
+    border-radius: 100px;
+}
+.flip {
+    background-color: transparent;
+    width: 250px;
+    height: 450px;
+    perspective: 1000px;
+    font-family: sans-serif;
+          }
+  
+  .flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip:hover .flip-inner{
+    transform: rotateY(180deg);
+  }
+  
+  .flip-front, .flip-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-front {
+       background-color: rgba(248, 247, 247, 0.852)
+  }
+  
+  .flip-back {
+      background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 211, 195) 40%, 48%);
+    transform: rotateY(180deg);
+  }
+  .flip-front img{
+      height: 80%;
+      width:100%;
+  }
+  .flip-back h2{
+      font-size: 2em;
+  }
+  .flip-back button{
+      background-color: black;
+      color: white;
+      padding: 1.3em;
+      font-size: 0.8em;
+      border-radius: 20px;
+      width:60%;
+      margin-left: 20%;
+      
+
+  }
+  .flip-back h3{
+      font-size: 2em;
+      letter-spacing: 2px;
+  }
+  .flip-back button:hover{
+      background-color: rgb(253, 45, 45);
+      border: none;
+      cursor: pointer;
+  
+  }
+  .item-cart{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      justify-content: space-evenly;
+      gap:2em;
+  }
+  .flip-front h3{
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      font-weight: 900px;
+      font-family:Georgia, 'Times New Roman', Times, serif
+  }
+  .flip-front p{
+      letter-spacing: 1px;
+      color:rgba(0, 0, 0, 0.46);
+      margin-bottom: 1.3em;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+    height:500px;
+    gap:2em
+
+}
+.pic1 img{
+    width:100%;
+    height: 90%;
+    object-fit: cover;
+
+
+}
+.pic1{
+    flex:1;
+    cursor: pointer;
+    overflow: hidden;
+    transition: flex 0.5s ease-in-out;
+
+}
+.pic1:hover{
+    flex:1.5;
+}
+.main5-1 img:hover{
+    transition: 1s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.a1 img:hover{
+    transition: 1s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.a1 button:hover{
+    background-color:rgb(253, 45, 45);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width:60%;
+}
+.class2 button:hover{
+    background-color:rgb(253, 45, 45);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+.c2 button:hover{
+    background-color:rgb(253, 45, 45);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.a3 button:hover{
+    background-color:rgb(253, 45, 45);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly
+}
+.foot1 p{
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+.foot1 h3{
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+.web{
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+.foot2{
+    font-size: 1.3em;
+    
+}
+.foot2 i{
+    color:rgb(253, 45, 45);
+    font-size: 1.2em;
+}
+.foot2 a{
+    text-decoration: none;
+    color: black;
+}
+.foot3{
+    font-size: 1.3em;
+}
+.foot3 input{
+    width:140%;
+    padding: 1.5em;
+    border-radius: 2em;
+    border: none;
+    box-shadow: 0px 0px 5px 0px black;
+}
+.foot3 button{
+    width:140%;
+    padding: 0.6em;
+    border-radius: 2em;
+    background-color:rgb(253, 45, 45);
+    color: white;
+    border: 1px solid rgb(253, 45, 45);
+    font-size: 1.3em;
+
+}
+.foot3 p{
+    text-align: center;
+    margin-left: 2em;
+    color: rgba(0, 0, 0, 0.548);
+}
+.foot3 button:hover{
+    background-color: black;
+    border: none;
+}
+.foot3 input:hover{
+    box-shadow: 0px 0px 17px 0px black;
+}
+.char{
+    font-size: 40px;
+    height: 40px;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+}
+@media (width<=600px){
+    article{
+        width: 600px;
+    }
+    article h1{
+        font-size: 3em;
+    }
+    section{
+        display: grid;
+        grid-template-columns: auto;
+        align-content: center;
+    }
+    .c1 img{
+        margin-left: 15%;
+    }
+    .c2{
+        margin-left: 13%;
+    }
+    .c2 button{
+        margin-left: 10%;
+    }
+    .c2 h3{
+        font-size: 2em;
+        width: 500px;
+    }
+    .c2 p{
+        font-size: 1.4em;
+        width: 500px;
+    }
+    .main2{
+        width:600px;
+        display: grid;
+        grid-template-columns: auto;
+        align-content: center;
+    }
+    .child11 img{
+        width:400px;
+    }
+    .child22{
+        width:450px;
+    }
+    .class1{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .first{
+        width:500px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .card{
+        width:10em;
+        margin-left: 15%;
+    }
+    .child4{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .child4-1 img{
+        width:600px;
+    }
+    .child4-2{
+        width:500px;
+        margin-left: 10%;
+    }
+    .child5{
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+    .child5-2{
+        width:500px;
+        margin-left: 5%;
+
+    }
+    .child5-1 img{
+        width:560px;
+
+    }
+    .item-cart{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-content: center;
+
+    }
+    .flip-inner{
+        margin-left: 5%;
+    }
+    .pic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:600px;
+    }
+    .pic1 img{
+        width:200px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 4em;
+    }
+    .foot1{
+        margin-left: 20%;
+    }
+    .foot1 h3{
+        font-size: 1.4em;
+
+    }
+    .foot2{
+        margin-left: 20%;
+    }
+    .foot3{
+        font-size: 1em;
+        margin-left: 20%;
+    }
+    .foot3 input{
+        width:400px;
+    }
+    .foot3 button{
+        width: 400px;
+    }
+    .main3,.main4{
+        background-color: black;
+        width:600px;
+    }
+    .foot1{
+        display: grid;
+        grid-template-columns: auto;
+        align-content: center;
+    } 
+    aside h1{
+        width:100px;
+    }
+}
+@media (width<=500px){
+    .flip-inner{
+        margin-left: 13%;
+    }
+    .card{
+        width:10em;
+        margin-left: 10%;
+    }
+}
+
+  
+
+
+ 

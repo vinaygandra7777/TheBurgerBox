@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BURGER BOX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/516f629e15.js" crossorigin="anonymous"></script>
+
+<style>
+.topnav{
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 1px 1px 5px 0px black;
+  @media (width<=600px){
+    width:600px;
+    
+  }
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.topnav a.icon:hover{
+    color: rgb(253, 45, 45);;
+}
+
+.active {
+    text-align: center;
+ 
+}
+.act{
+    position: absolute;
+    top:0%;
+    right:0%;
+}
+#myLinks a:hover{
+    color: rgb(253, 45, 45);
+
+}
+.act:hover{
+    color:  rgb(253, 45, 45);
+}
+.card {
+  position: relative;
+  width: 15.875em;
+  height: 20.5em;
+  box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.841);
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+  border-radius: 10px;
+}
+
+.card::after {
+  content: "Add to Cart ";
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background:rgb(253, 45, 45);
+  color: #fff;
+  height: 2em;
+  width: 90%;
+  transition: all 100ms;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: em;
+  position: absolute;
+  left: 1.05em;
+  bottom: 1.875em;
+  font-weight: 800;
+  color: #000;
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.3em;
+  position: absolute;
+  left: 5.625em;
+  bottom: 0.25em;
+  color: black;
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(1);
+}
+
+.card:active::after {
+  content: "Added !";
+  height: 3.125em;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image {
+  background: rgba(252,248,247,255);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.first{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 3em;
+}
+</style>
+</head>
+<body>
+    <div class="body">
+            <div class="topnav">
+                    <a href="#home" class="active"><h4>THE BURGER BOX</h4></a>
+                    <a href="cart.html" class="act"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                <div id="myLinks">
+                    <a href="#"><i class="fa-solid fa-house"></i> HOME</a>
+                    <a href="#cl1"><i class="fa-solid fa-address-card"></i> ABOUT</a>
+                    <a href="#offer"><i class="fa-regular fa-envelope"></i> OFFERS</a>
+                    <a href="#menu"><i class="fa-solid fa-bars"></i> MENU</a>
+                    <a href="#contact"><i class="fa-regular fa-address-book"></i> CONTACT</a>
+                    <a href="form.html" class="log1"><i class="fa-solid fa-right-to-bracket"></i> LOGIN</a>
+                  </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+    <div class="maincontact">
+        <h2>CRUNCH<span style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> GOODNESS</span></h2>
+        <br><br>
+        <h1>BURGER</h1>
+    </div>
+    <div class="contact">
+        <img src="pics/burgerr.png">
+        <a href="#menu"><button> SEE MORE</button></a>
+    </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    
+   
+    <section id="cl1">
+        <div class="c1">
+            <img src="pics/bug1.png">
+        </div>
+        <div class="c2" id="text">
+            <button>About us</button>
+            <br><br><br>
+            <h3>Delivering best ingredients for our trusty food lovers</h3>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe, nisi quaerat rem quisquam consequuntur neque dicta adipisci aperiam? Quam temporibus cum cupiditate culpa dicta odit veniam sint impedit quis!</p>
+            <br>
+            <h4> Quis ipsum suspendisse ultrices gravida.</h4>
+        </div>
+    </section>
+    <br><br>
+    <article id="offer">
+    <br><br><br><br>
+    <h1 style="letter-spacing: 2px; font-size: 2em; margin-left: 1em;">Special Offers </h1>
+    <br><br>
+    <br><br><br>
+    <div class="main2" id="offer">
+        <div class="child1">
+            <div class="child11">
+                <img src="pics/hue1.png">
+            </div>
+            <br>
+            <br>
+            <div class="child22">
+                <h1 style="text-align: center;">Ham Sandwich</h1>
+                <br>
+            <div class="class1">
+                <div class="a">
+                    <button>fat 26g</button>
+                </div>
+                <div class="a">
+                    <button>Sugars 30g</button>
+                </div>
+                <div class="a">
+                    <button> Carbs 26g</button>
+                </div>
+            </div>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+            <br><br>
+            <div class="class2">
+                <div class="b">
+                    <h2>$16</h2>
+                </div>
+                <div class="c">
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+        </div>
+            <div class="first">
+            <div class="card">
+                <div class="image"> <img src="pics/hue2.png" height="80%" width="100%"></div>
+                    <span class="title">Juicy Beef Burger Meal</span>
+                    <span class="price">$8</span>
+                </div>
+            <div class="card">
+                <div class="image"> <img src="pics/hue3.png" height="80%" width="100%"></div>
+                    <span class="title">Choko Milkshake Heavy</span>
+                    <span class="price">$10</span>
+                </div>
+            <div class="card">
+                <div class="image"> <img src="pics/hue4.png" height="80%" width="100%"></div>
+                    <span class="title">Blueberry Waffles Coo</span>
+                    <span class="price">$4</span>
+                </div>
+            <div class="card">
+                <div class="image"> <img src="pics/hue5.png" height="80%" width="100%"></div>
+                    <span class="title">Medium French Fries(M) </span>
+                    <span class="price">$9</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </article>
+    <br><br><br><br><br><br>
+    <div class="main3">
+        <div class="child4">
+            <div class="child4-1">
+                <img src="pics/layer1.png">
+            </div>
+            <div class="child4-2">
+                <button>-25% OFF</button>
+                <br>
+                <br>
+                <h2>Enjoy our specially prepared burgers for you</h2>
+                <br>
+                <br>
+                <p> Don't miss out on our daily special offers</p>
+                <br>
+                <br>
+                <br>
+                <a href="#menu">SEE  MENU </a>
+            </div>
+        </div>
+    </div>
+    <div class="main4">
+        <div class="child5">
+            <div class="child5-2">
+                <button>-15% OFF</button>
+                <br>
+                <h2>New, amazing sandwich offers every day</h2>
+                <br>
+                <br>
+                <p>
+                    Just add some of our juicy side dishes</p>
+                <br><br><br><br>
+                <a href="#menu">SEE   MENU</a>
+            </div>
+            <div class="child5-1">
+                    <img src="pics/layer2.png">
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+<aside id="menu">
+    <br><br><br><br>
+    <h1 style="font-size: 3em; letter-spacing: 2px; margin-left: 1em;">Trending Burgers</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="item-cart">
+        <div class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="pics/buger1.png">
+                    <br>
+                    <h3>Juicy Burger</h3>
+                    <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Juicy Burger</h3>
+                    <br><br><br>
+                    <h2>$5</h2>
+                    <br><br><br><br><br><br><br>
+                    <button>+ Add to cart  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="pics/buger2.png">
+                    <br>
+                    <h3>Juicy Burger</h3>
+                    <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Juicy Burger</h3>
+                    <br><br><br>
+                    <h2>$13</h2>
+                    <br><br><br><br><br><br><br>
+                    <button>+ Add to cart  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="pics/buger3.png">
+                    <br>
+                    <h3>Juicy Burger</h3>
+                    <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Juicy Burger</h3>
+                    <br>
+                    <br><br><br>
+                    <h2>$10</h2>
+                    <br><br><br><br><br><br><br>
+                    <br>
+                    <button>+ Add to cart  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="pics/buger4.png">
+                    <br>
+                    <h3>Juicy Burger</h3>
+                    <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Juicy Burger</h3>
+                    <br><br><br>
+                    <h2>$9</h2>
+                    <br><br><br><br><br><br><br>
+                    <button>+ Add to cart  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <br><br><br>
+    <h1 style="font-size: 3em; letter-spacing: 3px; margin-left: 1.3em;"> Deserts Menu</h1>
+    <br><br><br>
+    <div class="item-cart">
+        <div class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="pics/staw.png">
+                    <br>
+                    <h3>Strawberry Mix</h3>
+                    <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Strawberry Mix</h3>
+                    <br><br><br>
+                    <h2>$3</h2>
+                    <br><br><br><br><br><br><br>
+                    <button>+ Add to cart  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="pics/milk.png">
+                    <br>
+                    <h3>Chocolate Mix</h3>
+                    <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Chocolate Mix</h3>
+                    <br><br><br>
+                    <h2>$10</h2>
+                    <br><br><br><br><br><br><br>
+                    <button>+ Add to cart  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="pics/apple.png">
+                    <br>
+                    <h3>Apple Pie</h3>
+                    <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Apple Pie</h3>
+                    <br><br><br>
+                    <h2>$7</h2>
+                    <br><br><br><br><br><br><br>
+                    <button>+ Add to cart  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="pics/saa.png">
+                    <br>
+                    <h3>Sunday Waffle</h3>
+                    <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Sunday Waffle</h3>
+                    <br><br><br>
+                    <h2>$4</h2>
+                    <br><br><br><br><br><br><br>
+                    <button>+ Add to cart  <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+                
+            
+    </aside>
+        <br><br><br><br><br><br>
+        <section>
+            <div class="c1">
+                <img src="pics/women.png" width="100%">
+            </div>
+            <div class="c2">
+                <button>TESTIMONIALS</button>
+                <br>
+                <br>
+                <br>
+                <h3>What our clients have to say</h3>
+                <br>
+                <br>
+                <h2>99</h2>
+                <br>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet saepe, nisi quaerat rem quisquam consequuntur neque dicta adipisci aperiam? Quam temporibus cum cupiditate culpa dicta odit veniam sint impedit quis!</p>
+                <br>
+                <br>
+                <b style="font-size: 1.5em;">- Lana Del </Del></b>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br>
+        <div class="art">
+            <div class="pic">
+                <div class="pic1">
+                    <img src="pics/insta2.png">
+
+                </div>
+                <div class="pic1">
+                    <img src="pics/inta3.png">
+
+                </div>
+                <div class="pic1">
+                    <img src="pics/inta4.png">
+
+                </div>
+                <div class="pic1">
+                    <img src="pics/inst4.png">
+
+                </div>
+
+            </div>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <footer id="contact">
+            <div class="foot1"> 
+                <h3><b> THE BURGER BOX</b></h3>
+                <br>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+                <br>
+                <br>
+                <br>
+                <div class="web">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+
+            </div>
+            <div class="foot2">
+                <h4 style="font-size: 1.2em; letter-spacing: 2px">Contact Us</h4>
+                <br>
+                <pre><i class="fa-solid fa-location-dot"></i>   Street Number 1 ,Hyderabad</pre>
+                <br>
+                <pre><i class="fa-solid fa-phone"></i>  +91 9014583641</pre>
+                <br>
+                <pre><i class="fa-solid fa-envelope"></i><a href="mailto@vinaygandra7777@gmail.com">   Gmail</a></pre>
+                <br>
+                <p></p>
+
+            </div>
+            <div class="foot3">
+                <h3 style="text-align: center;font-size: 1.2em; letter-spacing: 2px">Subscribe</h3>
+                <br>
+                <br>
+                <input type="email" name="email" placeholder="enter your email here">
+                <br>
+                <br>
+                <button>Subscribe</button>
+                <br>
+                <br>
+                <p>Get the latest special offers</p>
+
+            </div>
+        </footer>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>    
+    
+</body>
+</html>
